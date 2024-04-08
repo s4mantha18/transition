@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    margin: 100px auto;
+    width: 250px;
+    height: fit-content;
+}
+
+main div{
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+}
+
+main div:nth-of-type(1){
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: greenyellow;
+    position: relative;
+    transition: 1s;
+}
+
+main div:nth-of-type(2){
+    padding-top: 50px;
+    border-radius: 0px 0px 20px 20p;
+    background-color: white;
+    width: 90%;
+    margin: -195px auto 0px auto;
+    transition: 1s;
+}
+
+main div:nth-of-type(1):hover{
+    box-shadow: 0px 0px 50px greenyellow;
+}
+
+main div:nth-of-type(1):hover ~ div:nth-of-type(2){
+    margin: 0px auto;
+}
